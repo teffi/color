@@ -75,16 +75,16 @@
 /**
  * Ternary clamp (0.0f to 1.0f)
  *
- * @param {CGFloat} Input
+ * @param input - {CGFloat}
  *
  * @return {CGFloat}
  */
-- (CGFloat)clamp:(CGFloat)a
+- (CGFloat)clamp:(CGFloat)input
 {
     static const CGFloat min = 0.0f;
     static const CGFloat max = 1.0f;
     
-    return (a > max) ? max : ((a < min) ? min : a);
+    return (input > max) ? max : ((input < min) ? min : input);
 }
 
 /**

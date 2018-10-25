@@ -28,7 +28,6 @@ static NSDictionary *crayolaHash;
 /**
  * Initializes the crayola hash (NSDictionary) if needed.
  *
- * @return {void}
  */
 + (void)initCrayolaHash
 {
@@ -40,7 +39,6 @@ static NSDictionary *crayolaHash;
 /**
  * Clears the crayola hash (NSDictionary).
  *
- * @return {void}
  */
 + (void)clearCrayolaHash
 {
@@ -50,7 +48,7 @@ static NSDictionary *crayolaHash;
 /**
  * Returns a UIColor based on the specified Crayola crayon name.
  *
- * @param {NSString} Crayon name (from: http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors)
+ * @param crayon - crayon name {NSString} (from: http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors)
  *
  * @return {UIColor}
  */

@@ -15,10 +15,10 @@
 /**
  * Returns a UIColor that is offset from the current UIColor instance.
  *
- * @param {CGFloat} Hue offset (-1.0 to 1.0)
- * @param {CGFloat} Saturation offset (-1.0 to 1.0)
- * @param {CGFloat} Brightness offset (-1.0 to 1.0)
- * @param {CGFloat} Alpha offset (-1.0 to 1.0)
+ * @param hue - {CGFloat} offset (-1.0 to 1.0)
+ * @param saturation - {CGFloat} offset (-1.0 to 1.0)
+ * @param brightness - {CGFloat} offset (-1.0 to 1.0)
+ * @param alpha - {CGFloat} offset (-1.0 to 1.0)
  *
  * @return {UIColor}
  */
@@ -42,16 +42,16 @@
 /**
  * Ternary clamp (0.0f to 1.0f)
  *
- * @param {CGFloat} Input
+ * @param input - {CGFloat}
  *
  * @return {CGFloat}
  */
-- (CGFloat)clamp:(CGFloat)a
+- (CGFloat)clamp:(CGFloat)input
 {
     static const CGFloat min = 0.0f;
     static const CGFloat max = 1.0f;
     
-    return (a > max) ? max : ((a < min) ? min : a);
+    return (input > max) ? max : ((input < min) ? min : input);
 }
 
 @end

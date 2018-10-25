@@ -13,8 +13,8 @@
 /**
  * Creates a new UIColor instance using a hex input and alpha value.
  *
- * @param {UInt32} Hex
- * @param {CGFloat} Alpha
+ * @param hex - {UInt32}
+ * @param alpha - {CGFloat}
  *
  * @return {UIColor}
  */
@@ -33,7 +33,7 @@
 /**
  * Creates a new UIColor instance using a hex input.
  *
- * @param {UInt32} Hex
+ * @param hex - {UInt32}
  *
  * @return {UIColor}
  */
@@ -45,7 +45,7 @@
 /**
  * Creates a new UIColor instance using a hex string input.
  *
- * @param {NSString} Hex string (ie: @"ff", @"#fff", @"ff0000", or @"ff00ffcc")
+ * @param hexString - {NSString} (ie: @"ff", @"#fff", @"ff0000", or @"ff00ffcc")
  *
  * @return {UIColor}
  */
